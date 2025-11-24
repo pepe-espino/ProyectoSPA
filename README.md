@@ -1,1 +1,2 @@
-# ProyectoSPA
+Descripción: 
+   Este proyecto tiene el objetivo de que el usuario pueda crear platos de comida y gestionar los platos que tenga añadido. Podrá crear un plato de cero, añadiendole nombre, descripción, dificultad, y si es de sus platos favoritos o no
