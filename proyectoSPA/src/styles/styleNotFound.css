@@ -1,0 +1,26 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;       
+  text-align: center;
+  background-color: #dfdfdfb7;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;             
+  gap: 0.5rem;             
+}
+
+.not-found h1 {
+  font-size: 6rem;
+  margin: 0px;
+  color: #ff4c4c;
+  line-height: 1;
+}
+
+.not-found p {
+  font-size: 1.5rem;
+  color: #ff4c4c;
+  margin-top: 0px;
+  font-weight: bold;
+}

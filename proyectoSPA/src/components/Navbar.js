@@ -3,6 +3,7 @@ export function Navbar() {
         <nav>
             <a href="#/">Inicio</a>
             <a href="#/about">Sobre nosotros</a>
+            <a href="#/dishes">Platos</a>
         </nav>
     `;
 }

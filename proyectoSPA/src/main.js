@@ -1,11 +1,13 @@
+import {Header} from './components/Header.js';
+import { Footer } from './components/Footer.js';
 import './styles/style.css';
-import {Navbar} from './components/Navbar';
-import {router} from './router';
+import { router } from './router.js';
 
 document.querySelector('#app').innerHTML = `
-    ${Navbar()}
+    ${Header()}
     <main id="view"></main>
-`
+    ${Footer()}
+`;
 
 router();
 window.addEventListener('hashchange', router);

@@ -1,0 +1,50 @@
+.dish-detail {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dish-detail h2 {
+  margin-bottom: 1rem;
+  color: #ff4c4c;
+}
+
+.dish-detail img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.dish-detail p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #ff4c4c;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #e63b3b;
+}
+
+.bi-star-fill{
+  color: rgb(233, 170, 35);
+}
+
+.bi-star{
+  color: rgba(194, 184, 184, 0.486);
+  border: 0px;
+}
