@@ -5,7 +5,7 @@ export function Home() {
   section.classList.add('home');
 
   section.innerHTML = `
-    <div class="hero">
+    <div class="container">
       <h1>🍽️ Bienvenido a Foodie SPA</h1>
       <p>Descubre platos únicos, sabores auténticos y experiencias que te harán viajar.</p>
       <a href="#/dishes" class="btn">Ver Platos Disponibles</a>

@@ -1,32 +1,27 @@
-import { supabase } from '../services/supabase.js';
-import '../styles/styleDishesList.css'
+import { getProductById } from '../services/products.js';
+import '../styles/styleDishesDetails.css'
 
 export async function DishDetail(id) {
   const section = document.createElement('section');
   section.classList.add('dish-detail');
-  section.innerHTML = `<p>Cargando detalle...</p>`;
 
   try {
-    const { data, error } = await supabase
-      .from('products')
-      .select('*')
-      .eq('id', id)
-      .single();
+    const product = await getProductById(id);
 
-    if (error) throw error;
-
-    if (!data) {
+    if (!product) {
       section.innerHTML = `<p>No se encontró el plato.</p>`;
       return section;
     }
 
     section.innerHTML = `
-      <h2>${data.name}</h2>
-      <img src="${data.image}" alt="${data.name}" />
-      <p><strong>Origen:</strong> ${data.origin}</p>
-      <p><strong>Descripción:</strong> ${data.description}</p>
-      <p><strong>Rating:</strong> ${'<i class="bi bi-star-fill"></i>'.repeat(data.rating)+'<i class="bi bi-star"></i>'.repeat(5-data.rating)}</p>
+      <h2>${product.name}</h2>
+      <img src="${product.image}" alt="${product.name}" />
+      <div>
+      <p><strong>Origen:</strong> ${product.origin}</p>
+      <p><strong>Descripción:</strong> ${product.description}</p>
+      <p><strong>Rating:</strong> ${'<i class="bi bi-star-fill"></i>'.repeat(product.rating)+'<i class="bi bi-star"></i>'.repeat(5-product.rating)}</p>
       <a href="#/dishes" class="btn-back"><i class="bi bi-arrow-left-circle"></i> Volver a la lista</a>
+      </div>
     `;
   } catch (err) {
     console.error('Error al cargar detalle:', err.message);

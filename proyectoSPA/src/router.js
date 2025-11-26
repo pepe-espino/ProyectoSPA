@@ -12,7 +12,8 @@ export function router() {
 
     if (route.startsWith('/dish/')) {
         const id = route.split('/')[2];
-        DishDetail(id).then(details => {
+        DishDetail(id)
+        .then(details => {
             view.innerHTML = '';
             view.appendChild(details);
         });
