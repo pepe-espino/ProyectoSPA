@@ -34,3 +34,39 @@
 .bi-star-fill{
   color: gold;
 }
+
+.title{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.title h2{
+  width: 85%;
+}
+
+.title button{
+  font-size: 17px;
+  width: 25%;
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 100px 8px rgba(0, 0, 0, 0.329);
+}
+
+.card-content .bi-heart,
+.card-content .bi-heart-fill {
+  color: crimson;
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card-content .bi-heart:hover,
+.card-content .bi-heart-fill:hover {
+  transform: scale(1.2);
+}
+

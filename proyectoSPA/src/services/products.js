@@ -15,3 +15,14 @@ export async function getProductById(id){
     }
     return data;
 }
+
+export async function deleteById(id){
+    const {data, error} = await supabase.from('products').delete().eq('id', id);
+
+    if(error){
+        console.log('Error al borrar producto:', error.message);
+        return false;
+    }
+
+    return true;
+}

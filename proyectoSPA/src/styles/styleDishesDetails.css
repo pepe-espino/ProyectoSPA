@@ -39,7 +39,7 @@
   grid-column-end: 2;
 }
 
-.dish-detail div {
+.dish-detail .data {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,4 +81,27 @@
 .bi-star{
   color: rgba(194, 184, 184, 0.486);
   border: 0px;
+}
+
+.buttons {
+  display: flex;
+  padding: 0px;
+  gap: 10px;
+}
+
+.btn-back, .btn-delete {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #ff4c4c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-delete:hover {
+  background: #e63b3b;
 }
