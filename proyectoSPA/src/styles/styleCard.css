@@ -70,3 +70,8 @@
   transform: scale(1.2);
 }
 
+.dishesList .dishes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+  gap: 1.5rem;
+}

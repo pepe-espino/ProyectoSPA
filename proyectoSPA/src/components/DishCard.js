@@ -5,7 +5,7 @@ export function DishCard({id, name, image, origin, rating}) {
   const article = document.createElement('article');
   article.classList.add('card');
 
-  const stars = Array.from({ length: rating }, () => '<i class="bi bi-star-fill"></i>').join('');
+  const stars = '<i class="bi bi-star-fill"></i>'.repeat(rating)+'<i class="bi bi-star"></i>'.repeat(5-rating);
 
   const heartIcon = isFavorite(id) 
     ? '<i class="bi bi-heart-fill"></i>' 
