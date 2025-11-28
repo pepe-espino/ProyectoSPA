@@ -70,8 +70,39 @@
   transform: scale(1.2);
 }
 
+.dishesList {
+  padding: 1rem;
+}
+
 .dishesList .dishes-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .title h2 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .title button {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
