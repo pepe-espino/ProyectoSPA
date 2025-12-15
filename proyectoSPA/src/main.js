@@ -19,7 +19,9 @@ initI18n().then(() => {
         if (e.target.id === "lang-selector") {
             const lang = e.target.value;
             localStorage.setItem("lang", lang);
-            i18next.changeLanguage(lang).then(() => location.reload());
+            i18next.changeLanguage(lang).then(() => {
+                rerenderApp();
+            });
         }
     });
 
