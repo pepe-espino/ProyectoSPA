@@ -9,7 +9,7 @@ export const initI18n = async () => {
     .init({
       lng: saved,
       fallbackLng: "en",
-      supportedLngs: ["en", "es", "fr", "de", "it", "pt"],
+      supportedLngs: ["en", "es", "fr", "de", "it", "pt", "ar"],
       backend: {
         loadPath: "/locales/{{lng}}/common.json"
       }

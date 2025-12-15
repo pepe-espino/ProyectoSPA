@@ -11,6 +11,8 @@ export function LanguageSelector() {
       <option value="de" ${current === "de" ? "selected" : ""}>DE</option>
       <option value="it" ${current === "it" ? "selected" : ""}>IT</option>
       <option value="pt" ${current === "pt" ? "selected" : ""}>PT</option>
+      <option value="ar" ${current === "ar" ? "selected" : ""}>AR</option>
     </select>
   `;
 }
+  
