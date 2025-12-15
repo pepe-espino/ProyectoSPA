@@ -105,3 +105,47 @@
 .btn-delete:hover {
   background: #e63b3b;
 }
+
+
+@media (max-width: 600px) {
+  .dish-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .dish-detail h2 {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+
+  .dish-detail img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .dish-detail .data {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dish-detail p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .btn-back, .btn-delete {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
