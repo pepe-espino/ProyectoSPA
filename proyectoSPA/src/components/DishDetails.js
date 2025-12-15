@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import { getProductById, deleteById } from '../services/products.js';
 import '../styles/styleDishesDetails.css'
 
@@ -9,17 +10,17 @@ export async function DishDetail(id) {
     const product = await getProductById(id);
 
     if (!product) {
-      section.innerHTML = `<p>No se encontró el plato.</p>`;
+      section.innerHTML = `<p>${i18next.t("detail.notFound")}</p>`;
       return section;
     }
 
     async function handleDelete() {
       const ok = await deleteById(id);
       if (ok) {
-        alert('Producto eliminado correctamente');
+        alert(i18next.t("detail.deleted"));
         window.location.hash = '#/dishes';
       } else {
-        alert('Error al eliminar el producto');
+        alert(i18next.t("detail.deleteError"));
       }
     }
 
@@ -27,13 +28,13 @@ export async function DishDetail(id) {
       <h2>${product.name}</h2>
       <img src="${product.image}" alt="${product.name}" />
       <div class="data">
-      <p><strong>Origen:</strong> ${product.origin}</p>
-      <p><strong>Descripción:</strong> ${product.description}</p>
-      <p><strong>Rating:</strong> ${'<i class="bi bi-star-fill"></i>'.repeat(product.rating)+'<i class="bi bi-star"></i>'.repeat(5-product.rating)}</p>
-      <div class="buttons">
-        <a href="#/dishes" class="btn-back"><i class="bi bi-arrow-left-circle"></i> Volver a la lista</a>
-        <button class="btn-delete"><i class="bi bi-trash-fill"></i> Eliminar</button>
-      </div>
+        <p><strong>${i18next.t("detail.origin")}:</strong> ${product.origin}</p>
+        <p><strong>${i18next.t("detail.description")}:</strong> ${product.description}</p>
+        <p><strong>${i18next.t("detail.rating")}:</strong> ${'<i class="bi bi-star-fill"></i>'.repeat(product.rating)+'<i class="bi bi-star"></i>'.repeat(5-product.rating)}</p>
+        <div class="buttons">
+          <a href="#/dishes" class="btn-back"><i class="bi bi-arrow-left-circle"></i> ${i18next.t("detail.back")}</a>
+          <button class="btn-delete"><i class="bi bi-trash-fill"></i> ${i18next.t("detail.delete")}</button>
+        </div>
       </div>
     `;
 
@@ -41,7 +42,7 @@ export async function DishDetail(id) {
 
   } catch (err) {
     console.error('Error al cargar detalle:', err.message);
-    section.innerHTML = `<p>Error al cargar el detalle del plato.</p>`;
+    section.innerHTML = `<p>${i18next.t("detail.error")}</p>`;
   }
 
   return section;

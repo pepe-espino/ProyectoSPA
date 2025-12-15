@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import { addFavorite, removeFavorite, isFavorite } from '../services/favorites.js';
 import '../styles/styleCard.css';
 
@@ -16,7 +17,7 @@ export function DishCard({id, name, image, origin, rating}) {
     <div class="card-content">
       <h3>${name} ${heartIcon}</h3>
       <p>${origin} · ${stars}</p>
-      <a href="#/dish/${id}">Ver detalle</a>
+      <a href="#/dish/${id}">${i18next.t("card.details")}</a>
     </div>
   `;
 

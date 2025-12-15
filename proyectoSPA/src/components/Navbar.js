@@ -1,9 +1,11 @@
+import i18next from "i18next";
+
 export function Navbar() {
     return `
         <nav>
-            <a href="#/">Inicio</a>
-            <a href="#/about">Sobre nosotros</a>
-            <a href="#/dishes">Platos</a>
+            <a href="#/">${i18next.t("nav.home")}</a>
+            <a href="#/about">${i18next.t("nav.about")}</a>
+            <a href="#/dishes">${i18next.t("nav.dishes")}</a>
         </nav>
     `;
 }

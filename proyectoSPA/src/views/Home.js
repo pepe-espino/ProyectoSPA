@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import '../styles/styleHome.css';
 
 export function Home() {
@@ -6,9 +7,9 @@ export function Home() {
 
   section.innerHTML = `
     <div class="container">
-      <h1>🍽️ Bienvenido a Foodie SPA</h1>
-      <p>Descubre platos únicos, sabores auténticos y experiencias que te harán viajar.</p>
-      <a href="#/dishes" class="btn">Ver Platos Disponibles</a>
+      <h1>🍽️ ${i18next.t("home.title")}</h1>
+      <p>${i18next.t("home.subtitle")}</p>
+      <a href="#/dishes" class="btn">${i18next.t("home.button")}</a>
     </div>
   `;
 

@@ -1,0 +1,38 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About us",
+  "nav.dishes": "Dishes",
+
+  "header.title": "Discover your favorite dishes",
+
+  "footer.author": "José Antonio Espino Daza",
+
+  "dishes.title": "Available dishes",
+  "dishes.showFavorites": "Show favorites",
+  "dishes.showAll": "Show all",
+  "dishes.noProducts": "No products available.",
+  "dishes.errorLoading": "Error loading products.",
+
+  "detail.notFound": "Dish not found.",
+  "detail.deleted": "Dish deleted successfully",
+  "detail.deleteError": "Error deleting dish",
+  "detail.origin": "Origin",
+  "detail.description": "Description",
+  "detail.rating": "Rating",
+  "detail.back": "Back to list",
+  "detail.delete": "Delete",
+  "detail.error": "Error loading dish details.",
+
+  "card.details": "View details",
+
+  "about.title": "About this page",
+  "about.p1": "This application is designed as a SPA (Single Page Application) to manage and explore food dishes.",
+  "about.p2": "It includes features such as dish listing, individual detail view, star rating, and data management through Supabase.",
+  "about.p3": "The goal is to offer a simple, visual, and practical experience to learn and demonstrate good web development practices.",
+
+  "home.title": "Welcome to Foodie SPA",
+  "home.subtitle": "Discover unique dishes, authentic flavors, and experiences that will make you travel.",
+  "home.button": "View Available Dishes",
+
+  "notfound.text": "Page not found"
+}

@@ -1,0 +1,38 @@
+{
+  "nav.home": "Accueil",
+  "nav.about": "À propos",
+  "nav.dishes": "Plats",
+
+  "header.title": "Découvrez vos plats préférés",
+
+  "footer.author": "José Antonio Espino Daza",
+
+  "dishes.title": "Plats disponibles",
+  "dishes.showFavorites": "Afficher les favoris",
+  "dishes.showAll": "Afficher tout",
+  "dishes.noProducts": "Aucun produit disponible.",
+  "dishes.errorLoading": "Erreur lors du chargement des produits.",
+
+  "detail.notFound": "Plat introuvable.",
+  "detail.deleted": "Plat supprimé avec succès",
+  "detail.deleteError": "Erreur lors de la suppression du plat",
+  "detail.origin": "Origine",
+  "detail.description": "Description",
+  "detail.rating": "Évaluation",
+  "detail.back": "Retour à la liste",
+  "detail.delete": "Supprimer",
+  "detail.error": "Erreur lors du chargement du détail du plat.",
+
+  "card.details": "Voir le détail",
+
+  "about.title": "À propos de la page",
+  "about.p1": "Cette application est conçue comme une SPA (Single Page Application) pour gérer et explorer des plats.",
+  "about.p2": "Elle inclut des fonctionnalités telles que la liste des plats, le détail individuel, l'évaluation par étoiles et la gestion des données via Supabase.",
+  "about.p3": "L'objectif est d'offrir une expérience simple, visuelle et pratique pour apprendre et démontrer de bonnes pratiques de développement web.",
+
+  "home.title": "Bienvenue sur Foodie SPA",
+  "home.subtitle": "Découvrez des plats uniques, des saveurs authentiques et des expériences qui vous feront voyager.",
+  "home.button": "Voir les plats disponibles",
+
+  "notfound.text": "Page non trouvée"
+}

@@ -1,0 +1,38 @@
+{
+  "nav.home": "Início",
+  "nav.about": "Sobre nós",
+  "nav.dishes": "Pratos",
+
+  "header.title": "Descubra seus pratos favoritos",
+
+  "footer.author": "José Antonio Espino Daza",
+
+  "dishes.title": "Pratos disponíveis",
+  "dishes.showFavorites": "Mostrar favoritos",
+  "dishes.showAll": "Mostrar todos",
+  "dishes.noProducts": "Nenhum produto disponível.",
+  "dishes.errorLoading": "Erro ao carregar os produtos.",
+
+  "detail.notFound": "Prato não encontrado.",
+  "detail.deleted": "Prato excluído com sucesso",
+  "detail.deleteError": "Erro ao excluir o prato",
+  "detail.origin": "Origem",
+  "detail.description": "Descrição",
+  "detail.rating": "Avaliação",
+  "detail.back": "Voltar à lista",
+  "detail.delete": "Excluir",
+  "detail.error": "Erro ao carregar os detalhes do prato.",
+
+  "card.details": "Ver detalhes",
+
+  "about.title": "Sobre a página",
+  "about.p1": "Este aplicativo foi projetado como uma SPA (Single Page Application) para gerenciar e explorar pratos.",
+  "about.p2": "Inclui funcionalidades como lista de pratos, detalhes individuais, avaliação por estrelas e gerenciamento de dados via Supabase.",
+  "about.p3": "O objetivo é oferecer uma experiência simples, visual e prática para aprender e demonstrar boas práticas de desenvolvimento web.",
+
+  "home.title": "Bem-vindo ao Foodie SPA",
+  "home.subtitle": "Descubra pratos únicos, sabores autênticos e experiências que farão você viajar.",
+  "home.button": "Ver pratos disponíveis",
+
+  "notfound.text": "Página não encontrada"
+}

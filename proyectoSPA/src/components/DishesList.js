@@ -1,6 +1,7 @@
+import i18next from "i18next";
 import { DishCard } from "./DishCard";
 import { getProducts } from "../services/products";
-import { getFavorites } from "../services/favorites"; // funciones de localStorage
+import { getFavorites } from "../services/favorites";
 import '../styles/styleCard.css';
 
 export function DishesList() {
@@ -9,8 +10,8 @@ export function DishesList() {
 
   section.innerHTML = `
     <div class="title">
-    <h2>Platos disponibles</h2>
-    <button class="btn-filter"><i class="bi bi-heart-fill"></i> Mostrar favoritos</button>
+      <h2>${i18next.t("dishes.title")}</h2>
+      <button class="btn-filter"><i class="bi bi-heart-fill"></i> ${i18next.t("dishes.showFavorites")}</button>
     </div>
     <div class="dishes-container"></div>
   `;
@@ -23,7 +24,7 @@ export function DishesList() {
   function render(products) {
     listContainer.innerHTML = '';
     if (!products || products.length === 0) {
-      listContainer.innerHTML = `<p>No hay productos disponibles.</p>`;
+      listContainer.innerHTML = `<p>${i18next.t("dishes.noProducts")}</p>`;
       return;
     }
     products.forEach(product => {
@@ -39,19 +40,19 @@ export function DishesList() {
       filterBtn.addEventListener('click', () => {
         showFavorites = !showFavorites;
         if (showFavorites) {
-          const favs = getFavorites(); 
+          const favs = getFavorites();
           const favProducts = products.filter(p => favs.includes(p.id));
           render(favProducts);
-          filterBtn.innerHTML = '<i class="bi bi-heart-fill"></i> Mostrar todos';
+          filterBtn.innerHTML = `<i class="bi bi-heart-fill"></i> ${i18next.t("dishes.showAll")}`;
         } else {
           render(products);
-          filterBtn.innerHTML = '<i class="bi bi-heart-fill"></i> Mostrar favoritos';
+          filterBtn.innerHTML = `<i class="bi bi-heart-fill"></i> ${i18next.t("dishes.showFavorites")}`;
         }
       });
     })
     .catch(error => {
       console.error('Error al acceder a los productos:', error);
-      listContainer.innerHTML = `<p>Error al acceder a los productos.</p>`;
+      listContainer.innerHTML = `<p>${i18next.t("dishes.errorLoading")}</p>`;
     });
 
   return section;

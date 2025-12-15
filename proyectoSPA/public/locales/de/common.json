@@ -1,0 +1,38 @@
+{
+  "nav.home": "Startseite",
+  "nav.about": "Über uns",
+  "nav.dishes": "Gerichte",
+
+  "header.title": "Entdecke deine Lieblingsgerichte",
+
+  "footer.author": "José Antonio Espino Daza",
+
+  "dishes.title": "Verfügbare Gerichte",
+  "dishes.showFavorites": "Favoriten anzeigen",
+  "dishes.showAll": "Alle anzeigen",
+  "dishes.noProducts": "Keine Produkte verfügbar.",
+  "dishes.errorLoading": "Fehler beim Laden der Produkte.",
+
+  "detail.notFound": "Gericht nicht gefunden.",
+  "detail.deleted": "Gericht erfolgreich gelöscht",
+  "detail.deleteError": "Fehler beim Löschen des Gerichts",
+  "detail.origin": "Herkunft",
+  "detail.description": "Beschreibung",
+  "detail.rating": "Bewertung",
+  "detail.back": "Zurück zur Liste",
+  "detail.delete": "Löschen",
+  "detail.error": "Fehler beim Laden der Gerichtdetails.",
+
+  "card.details": "Details ansehen",
+
+  "about.title": "Über die Seite",
+  "about.p1": "Diese Anwendung wurde als SPA (Single Page Application) entwickelt, um Gerichte zu verwalten und zu erkunden.",
+  "about.p2": "Sie enthält Funktionen wie Gerichte-Liste, Detailansicht, Sternebewertung und Datenverwaltung über Supabase.",
+  "about.p3": "Das Ziel ist es, eine einfache, visuelle und praktische Erfahrung zu bieten, um gute Webentwicklungspraktiken zu erlernen und zu demonstrieren.",
+
+  "home.title": "Willkommen bei Foodie SPA",
+  "home.subtitle": "Entdecke einzigartige Gerichte, authentische Aromen und Erlebnisse, die dich auf eine Reise mitnehmen.",
+  "home.button": "Verfügbare Gerichte ansehen",
+
+  "notfound.text": "Seite nicht gefunden"
+}
